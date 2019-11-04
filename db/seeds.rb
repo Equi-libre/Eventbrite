@@ -8,7 +8,7 @@
 
 users = []
 
-10.times do |n|
+1.times do |n|
 	user = User.create(email: "email#{n}@yopmail.com",
 										 encrypted_password: Faker::Lorem.paragraph,
 										 description: Faker::Lorem.paragraph,
