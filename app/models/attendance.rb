@@ -3,8 +3,6 @@ class Attendance < ApplicationRecord
 
 	belongs_to :event
 	belongs_to :user
-	validates :user, presence: true
-  validates :event, presence: true
 
   def new_guest_send
     UserMailer.new_guest_send(self).deliver_now
