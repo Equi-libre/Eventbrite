@@ -5,8 +5,6 @@ class Event < ApplicationRecord
 	validates :description, length: {minimum: 20, maximum: 1000}, presence: true
 	validates :price, numericality: {minimum: 1, maximum: 1000}, presence: true
 	validates :location, presence: true
-
-	has_many :users
 end
 
 def is_multiple_5?
