@@ -1,4 +1,4 @@
-e# This file is auto-generated from the current state of the database. Instead
+# This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
@@ -28,8 +28,10 @@ ActiveRecord::Schema.define(version: 2019_11_04_100242) do
     t.text "description"
     t.integer "price"
     t.string "location"
+    t.bigint "admin_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["admin_id"], name: "index_events_on_admin_id"
   end
 
   create_table "users", force: :cascade do |t|
