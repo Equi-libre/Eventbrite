@@ -4,8 +4,10 @@ class User < ApplicationRecord
 	has_many :events, foreign_key: 'admin_id', class_name: "Event"
 	has_many :events
 
+	def welcome_send
+  	UserMailer.welcome_email(self).deliver_now
+	end
+
+
 end
 
-def welcome_send
-  UserMailer.welcome_email(self).deliver_now
-end

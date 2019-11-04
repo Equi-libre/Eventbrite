@@ -19,4 +19,4 @@ users = []
 	puts "Création utilisateur #{n}"
 end
 
-# User.create(email: "alt.gk-f3km7q1@yopmail.com", encrypted_password "", description: "hello voici ma description cvcvvvvvvvvvvvvvvvvvv", first_name: "Max", last_name: "val")
+# User.create(email: "mailerthp@yopmail.com", encrypted_password: "test", description: "hello voici ma description cvcvvvvvvvvvvvvvvvvvv", first_name: "Max", last_name: "val")
